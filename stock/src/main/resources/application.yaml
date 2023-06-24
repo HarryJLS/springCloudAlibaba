@@ -1,0 +1,26 @@
+server:
+  port: 8082
+
+  #默认只暴露了health和info两个端点，如果想暴露所有端点，可以配置如下：
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
+      base-path: /actuator   #修改端点的前缀，默认是/actuator
+    enabled-by-default: true  #默认true，表示所有端点都开启，false表示所有端点都关闭
+  endpoint:
+    health:
+      show-details: always  #默认为never，表示不显示详情，always表示显示详情
+
+logging:
+  file:
+    name: stock-service.log
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:8082
+
+
+

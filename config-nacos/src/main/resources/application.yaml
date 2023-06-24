@@ -1,0 +1,23 @@
+server:
+  port: 8050
+spring:
+  application:
+    name: nacos-config
+  cloud:
+    nacos:
+      server-addr: localhost:8848
+      username: nacos
+      password: nacos
+      namespace: public
+  config:
+    file-extension: yaml
+    namespace: dev
+    group: test
+    shared-configs:
+      - data-id: nacos-config.properties
+        refresh: true
+
+#在配置中心，可以通过profile进行设置
+#只有默认的配置文件才能结合profile进行使用
+#对应的Dataid：${spring.application.name}-${profile}.${file-extension:properties}
+

@@ -1,0 +1,163 @@
+2023-06-24 14:39:27.734  INFO 4884 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 4884 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 14:39:27.735  INFO 4884 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 14:39:28.194  INFO 4884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 14:39:28.198  INFO 4884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 14:39:28.198  INFO 4884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 14:39:28.237  INFO 4884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 14:39:28.237  INFO 4884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 474 ms
+2023-06-24 14:39:28.361  INFO 4884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 14:39:28.485  INFO 4884 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 14:39:28.507  INFO 4884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 14:39:28.514  INFO 4884 --- [main] com.example.StockApplication             : Started StockApplication in 0.955 seconds (JVM running for 1.359)
+2023-06-24 14:39:29.025  INFO 4884 --- [RMI TCP Connection(2)-192.168.123.108] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 14:39:29.026  INFO 4884 --- [RMI TCP Connection(2)-192.168.123.108] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 14:39:29.029  INFO 4884 --- [RMI TCP Connection(2)-192.168.123.108] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 14:40:51.197  INFO 4884 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 15:12:01.871  INFO 23676 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 23676 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 15:12:01.872  INFO 23676 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 15:12:02.347  INFO 23676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 15:12:02.352  INFO 23676 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 15:12:02.352  INFO 23676 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 15:12:02.390  INFO 23676 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 15:12:02.392  INFO 23676 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 490 ms
+2023-06-24 15:12:02.515  INFO 23676 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 15:12:02.621  INFO 23676 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 15:12:02.653  INFO 23676 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 15:12:02.675  INFO 23676 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 15:12:02.683  INFO 23676 --- [main] com.example.StockApplication             : Started StockApplication in 0.985 seconds (JVM running for 1.39)
+2023-06-24 15:12:02.736  INFO 23676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a7936b96942d
+2023-06-24 15:12:02.758  INFO 23676 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 15:12:02.758  INFO 23676 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 15:12:02.762  INFO 23676 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 15:35:22.716  WARN 23676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8083/instances]): I/O error on POST request for "http://localhost:8083/instances": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server. Further attempts are logged on DEBUG level
+2023-06-24 15:43:42.706  WARN 23676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8083/instances]): I/O error on POST request for "http://localhost:8083/instances": Unexpected end of file from server; nested exception is java.net.SocketException: Unexpected end of file from server. Further attempts are logged on DEBUG level
+2023-06-24 15:44:42.719  WARN 23676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8083/instances]): I/O error on POST request for "http://localhost:8083/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2023-06-24 15:48:32.717  WARN 23676 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8083/instances]): I/O error on POST request for "http://localhost:8083/instances": Connection refused: connect; nested exception is java.net.ConnectException: Connection refused: connect. Further attempts are logged on DEBUG level
+2023-06-24 16:00:35.347  INFO 23676 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:00:35.348  INFO 23676 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:00:36.998  INFO 24956 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 24956 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:00:37.000  INFO 24956 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:00:37.468  INFO 24956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:00:37.473  INFO 24956 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:00:37.473  INFO 24956 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:00:37.523  INFO 24956 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:00:37.523  INFO 24956 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 498 ms
+2023-06-24 16:00:37.643  INFO 24956 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:00:37.752  INFO 24956 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:00:37.786  INFO 24956 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:00:37.808  INFO 24956 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:00:37.815  INFO 24956 --- [main] com.example.StockApplication             : Started StockApplication in 0.989 seconds (JVM running for 1.396)
+2023-06-24 16:00:37.873  INFO 24956 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a7936b96942d
+2023-06-24 16:00:37.886  INFO 24956 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:00:37.887  INFO 24956 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:00:37.890  INFO 24956 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:06:05.908  INFO 24956 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:06:05.909  INFO 24956 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:06:07.969  INFO 30904 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 30904 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:06:07.971  INFO 30904 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:06:08.432  INFO 30904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:06:08.436  INFO 30904 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:06:08.437  INFO 30904 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:06:08.487  INFO 30904 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:06:08.488  INFO 30904 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 491 ms
+2023-06-24 16:06:08.610  INFO 30904 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:06:08.714  INFO 30904 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:06:08.747  INFO 30904 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:06:08.770  INFO 30904 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:06:08.778  INFO 30904 --- [main] com.example.StockApplication             : Started StockApplication in 0.983 seconds (JVM running for 1.389)
+2023-06-24 16:06:08.831  INFO 30904 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Application registered itself as a7936b96942d
+2023-06-24 16:06:08.845  INFO 30904 --- [http-nio-8082-exec-3] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:06:08.845  INFO 30904 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:06:08.848  INFO 30904 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:06:53.693  INFO 30904 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:06:53.694  INFO 30904 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:06:55.323  INFO 22068 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 22068 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:06:55.324  INFO 22068 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:06:55.809  INFO 22068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:06:55.815  INFO 22068 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:06:55.815  INFO 22068 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:06:55.857  INFO 22068 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:06:55.857  INFO 22068 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 506 ms
+2023-06-24 16:06:55.995  INFO 22068 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:06:56.101  INFO 22068 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:06:56.135  INFO 22068 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:06:56.158  INFO 22068 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:06:56.165  INFO 22068 --- [main] com.example.StockApplication             : Started StockApplication in 1.017 seconds (JVM running for 1.434)
+2023-06-24 16:06:56.230  INFO 22068 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:06:56.231  INFO 22068 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:06:56.234  INFO 22068 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:06:56.259  WARN 22068 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8082/instances]): 404 : [{"timestamp":"2023-06-24T08:06:56.250+00:00","status":404,"error":"Not Found","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2023-06-24 16:08:05.458  INFO 22068 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:08:05.459  INFO 22068 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:08:07.131  INFO 28952 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 28952 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:08:07.133  INFO 28952 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:08:07.603  INFO 28952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:08:07.608  INFO 28952 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:08:07.608  INFO 28952 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:08:07.647  INFO 28952 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:08:07.648  INFO 28952 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 485 ms
+2023-06-24 16:08:07.767  INFO 28952 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:08:07.872  INFO 28952 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:08:07.905  INFO 28952 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:08:07.928  INFO 28952 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:08:07.936  INFO 28952 --- [main] com.example.StockApplication             : Started StockApplication in 0.979 seconds (JVM running for 1.402)
+2023-06-24 16:08:07.996  INFO 28952 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:08:07.997  INFO 28952 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:08:08.000  INFO 28952 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:08:08.024  WARN 28952 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8082/instances]): 404 : [{"timestamp":"2023-06-24T08:08:08.016+00:00","status":404,"error":"Not Found","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2023-06-24 16:15:43.108  INFO 28952 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:15:43.109  INFO 28952 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:15:45.085  INFO 31604 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 31604 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:15:45.087  INFO 31604 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:15:45.567  INFO 31604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:15:45.573  INFO 31604 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:15:45.573  INFO 31604 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:15:45.610  INFO 31604 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:15:45.611  INFO 31604 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 491 ms
+2023-06-24 16:15:45.734  INFO 31604 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:15:45.837  INFO 31604 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:15:45.871  INFO 31604 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:15:45.893  INFO 31604 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:15:45.900  INFO 31604 --- [main] com.example.StockApplication             : Started StockApplication in 0.987 seconds (JVM running for 1.397)
+2023-06-24 16:15:45.962  INFO 31604 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:15:45.962  INFO 31604 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:15:45.965  INFO 31604 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:15:45.988  WARN 31604 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8082/instances]): 404 : [{"timestamp":"2023-06-24T08:15:45.979+00:00","status":404,"error":"Not Found","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2023-06-24 16:16:20.035  INFO 31604 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:16:20.037  INFO 31604 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:16:22.071  INFO 31384 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 31384 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:16:22.072  INFO 31384 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:16:22.527  INFO 31384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:16:22.532  INFO 31384 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:16:22.532  INFO 31384 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:16:22.574  INFO 31384 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:16:22.575  INFO 31384 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 476 ms
+2023-06-24 16:16:22.706  INFO 31384 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:16:22.820  INFO 31384 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:16:22.859  INFO 31384 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:16:22.886  INFO 31384 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:16:22.894  INFO 31384 --- [main] com.example.StockApplication             : Started StockApplication in 0.996 seconds (JVM running for 1.412)
+2023-06-24 16:16:22.966  INFO 31384 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:16:22.967  INFO 31384 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:16:22.970  INFO 31384 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:16:22.996  WARN 31384 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8082/instances]): 404 : [{"timestamp":"2023-06-24T08:16:22.986+00:00","status":404,"error":"Not Found","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2023-06-24 16:16:30.268  INFO 31384 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:16:30.269  INFO 31384 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:16:32.226  INFO 22088 --- [main] com.example.StockApplication             : Starting StockApplication on HARRY-JLS with PID 22088 (D:\zStudy\code\code\java\springCloudAlibaba\stock\target\classes started by Administrator in D:\zStudy\code\code\java\springCloudAlibaba)
+2023-06-24 16:16:32.228  INFO 22088 --- [main] com.example.StockApplication             : No active profile set, falling back to default profiles: default
+2023-06-24 16:16:32.707  INFO 22088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2023-06-24 16:16:32.712  INFO 22088 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-06-24 16:16:32.712  INFO 22088 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.46]
+2023-06-24 16:16:32.751  INFO 22088 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-06-24 16:16:32.751  INFO 22088 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 495 ms
+2023-06-24 16:16:32.869  INFO 22088 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2023-06-24 16:16:32.967  INFO 22088 --- [main] o.s.s.c.ThreadPoolTaskScheduler          : Initializing ExecutorService
+2023-06-24 16:16:32.999  INFO 22088 --- [main] o.s.b.a.e.web.EndpointLinksResolver      : Exposing 15 endpoint(s) beneath base path '/actuator'
+2023-06-24 16:16:33.021  INFO 22088 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2023-06-24 16:16:33.029  INFO 22088 --- [main] com.example.StockApplication             : Started StockApplication in 0.976 seconds (JVM running for 1.386)
+2023-06-24 16:16:33.093  INFO 22088 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-06-24 16:16:33.094  INFO 22088 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-06-24 16:16:33.097  INFO 22088 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 3 ms
+2023-06-24 16:16:33.120  WARN 22088 --- [registrationTask1] d.c.b.a.c.r.ApplicationRegistrator       : Failed to register application as Application(name=spring-boot-application, managementUrl=http://HARRY-JLS.lan:8082/actuator, healthUrl=http://HARRY-JLS.lan:8082/actuator/health, serviceUrl=http://HARRY-JLS.lan:8082/) at spring-boot-admin ([http://localhost:8082/instances]): 404 : [{"timestamp":"2023-06-24T08:16:33.111+00:00","status":404,"error":"Not Found","message":"","path":"/instances"}]. Further attempts are logged on DEBUG level
+2023-06-24 16:39:36.483  INFO 22088 --- [SpringContextShutdownHook] o.s.s.c.ThreadPoolTaskScheduler          : Shutting down ExecutorService
+2023-06-24 16:39:36.483  INFO 22088 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
