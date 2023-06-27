@@ -27,6 +27,7 @@
         <module>gateway</module>
         <module>admin</module>
         <module>jls-common</module>
+        <module>security</module>
     </modules>
 <!--    版本维护-->
     <properties>
