@@ -63,27 +63,30 @@ public class WebSecurityConfig extends WebSecurityConfigurerAdapter {
         // 认证配置
         http.formLogin()  //表单提交
                 .loginPage("/login.html") //自定义登录页面 认证成功会会隐藏的生成个token
-                .loginProcessingUrl("/admin/demo")  //登录访问路径，必须和表单提交接口一样
-//                .defaultSuccessUrl("/main.html")   //认证成功之后跳转的路径 转发
+                .loginProcessingUrl("/user/login")  //登录访问路径，必须和表单提交接口一样
+                .defaultSuccessUrl("/admin/demo")   //认证成功之后跳转的路径 转发
+                .failureForwardUrl("/fail.html")  //认证失败之后跳转的路径 转发
 //                .successForwardUrl()// 认证成功，跳转（重定向）页面 （依托于浏览器）
-                .successHandler(new MyAuthenticationSuccessHandler("/main.html")); // 自定义认证成功后的处理 重定向处理
+//                .successHandler(new MyAuthenticationSuccessHandler("/main.html")) // 自定义认证成功后的处理 重定向处理
 //                .failureHandler()
+        ;
 
 
                 // 授权认证
         http
                 .authorizeRequests()
                 //设置哪些路径可以直接访问，不需要认证
-                .antMatchers("/admin/demo","/login.html", "/fail.html", "/session/invalid").permitAll()
-                .anyRequest().authenticated()  //需要认证
-                .and().csrf().disable(); //关闭csrf防护 csrf跨站点请求  可以通过token来避免跨站点请求的攻击
+                .antMatchers("/login.html", "/fail.html", "/session/invalid").permitAll()
+                .anyRequest().authenticated();  //需要认证
+
+        http.csrf().disable(); //关闭csrf防护 csrf跨站点请求  可以通过token来避免跨站点请求的攻击   csrf跨站请求伪造
 
 
-        //记住我
-        http.rememberMe()
-                .tokenRepository(persistentTokenRepository())//设置持久化仓库
-                .tokenValiditySeconds(3600) //超时时间,单位s 默认两周
-                .userDetailsService(userService);  //设置自定义登录逻辑
+//        //记住我
+//        http.rememberMe()
+//                .tokenRepository(persistentTokenRepository())//设置持久化仓库
+//                .tokenValiditySeconds(3600) //超时时间,单位s 默认两周
+//                .userDetailsService(userService);  //设置自定义登录逻辑
     }
 
 
