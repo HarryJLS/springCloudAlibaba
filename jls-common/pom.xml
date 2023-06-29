@@ -4,12 +4,17 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.example</groupId>
-        <artifactId>springCloudAlibaba</artifactId>
-        <version>0.0.1-SNAPSHOT</version>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.3.12.RELEASE</version>
+        <relativePath/> <!-- lookup parent from repository -->
     </parent>
 
+    <groupId>com.example</groupId>
     <artifactId>jls-common</artifactId>
+    <version>2023062901-SNAPSHOT</version>
+    <name>jls-common</name>
+    <description>公共模块</description>
 
     <properties>
         <maven.compiler.source>11</maven.compiler.source>
@@ -31,8 +36,19 @@
 
         <dependency>
             <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter</artifactId>
+        </dependency>
+
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.junit.vintage</groupId>
+                    <artifactId>junit-vintage-engine</artifactId>
+                </exclusion>
+            </exclusions>
         </dependency>
     </dependencies>
 
@@ -69,7 +85,7 @@
                 <configuration>
                     <excludes>
                         <!-- 排除Main主类 -->
-                        <exclude>**/SpringbootDemoApplication*</exclude>
+                        <exclude>**/commonApplication*</exclude>
                         <exclude>**/logback*</exclude>
                         <exclude>**.properties</exclude>
                         <exclude>**.yml</exclude>

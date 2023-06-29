@@ -32,7 +32,7 @@
         <dependency>
             <groupId>com.example</groupId>
             <artifactId>jls-common</artifactId>
-            <version>0.0.1-SNAPSHOT</version>
+            <version>2023062901-SNAPSHOT</version>
         </dependency>
 
         <!--mysql数据库驱动-->
