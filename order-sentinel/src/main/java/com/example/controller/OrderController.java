@@ -100,13 +100,18 @@ public class OrderController {
 
 
     @GetMapping("/get/{id}")
-    @SentinelResource(value = "get", blockHandler = "blockHandlerNew")
+    @SentinelResource(value = "get", blockHandler = "blockHandlerNew",
+            fallback = "fallback", fallbackClass = TestService.class)
     public String get(@PathVariable("id") Integer id) {
         System.out.println("正常访问");
         return "正常访问";
     }
     private String blockHandlerNew(BlockException blockException) {
         return "热点数据处理";
+    }
+
+    public String fallback(Integer id, Throwable e) {
+        return "服务降级";
     }
 
 }

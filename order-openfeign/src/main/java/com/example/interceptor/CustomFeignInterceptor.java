@@ -6,6 +6,10 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.stereotype.Component;
+import org.springframework.web.context.request.RequestContextHolder;
+import org.springframework.web.context.request.ServletRequestAttributes;
+
+import javax.servlet.http.HttpServletRequest;
 
 /**
  * @author JLS
@@ -24,6 +28,15 @@ public class CustomFeignInterceptor implements RequestInterceptor {
 //        requestTemplate.uri("/6");
 
         logger.info("feign interceptor");
+
+        ServletRequestAttributes attributes = (ServletRequestAttributes) RequestContextHolder.getRequestAttributes();
+        if (null != attributes) {
+            HttpServletRequest request = attributes.getRequest();
+            String token = request.getHeader("Authorization");
+            logger.info("token:{}", token);
+
+            requestTemplate.header("Authorization", token);
+        }
 
     }
 }

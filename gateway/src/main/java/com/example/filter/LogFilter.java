@@ -4,6 +4,7 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.cloud.gateway.filter.GatewayFilterChain;
 import org.springframework.cloud.gateway.filter.GlobalFilter;
+import org.springframework.core.Ordered;
 import org.springframework.stereotype.Component;
 import org.springframework.web.server.ServerWebExchange;
 import reactor.core.publisher.Mono;
@@ -14,7 +15,7 @@ import reactor.core.publisher.Mono;
  * @since 2023-06-23 16:52
  */
 @Component
-public class LogFilter implements GlobalFilter {
+public class LogFilter implements GlobalFilter, Ordered {
 
     Logger logger = LoggerFactory.getLogger(LogFilter.class);
 
@@ -31,5 +32,11 @@ public class LogFilter implements GlobalFilter {
         logger.info("请求路径：{}", exchange.getRequest().getURI().getPath());
 
         return chain.filter(exchange);
+    }
+
+    @Override
+    public int getOrder() {
+        // 这个返回的值越小，优先值越高
+        return 100;
     }
 }

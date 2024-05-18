@@ -1,0 +1,26 @@
+
+spring:
+  application:
+    name: order-service  #这个一般是要设置为配置文件的名字，即和配置中心里面一致
+  profiles:
+    active: dev  # 优先级关系 order-service-dev.yml > order-service.yml > application-dev.yml > application.yml
+  cloud:
+    nacos:
+      config:
+        server-addr: localhost:8848
+        username: nacos
+        password: nacos
+        file-extension: yml  #指定配置文件的后缀名
+        namespace: public   #可指定命名空间
+
+        # 配置共享配置
+        shared-configs:
+          - data-id: order-service.yml
+            group: DEFAULT_GROUP
+            refresh: true  #支持动态刷新
+
+        # 配置扩展配置
+        extension-configs:
+            - data-id: order-service-dev.yml
+              group: DEFAULT_GROUP
+              refresh: true  #支持动态刷新

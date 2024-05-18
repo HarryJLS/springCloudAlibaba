@@ -34,6 +34,26 @@
             <artifactId>spring-cloud-starter-alibaba-sentinel</artifactId>
         </dependency>
 
+<!--        不用微服务的时候需要引入的包-->
+<!--        &lt;!&ndash; sentinel切面支持 &ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.csp</groupId>-->
+<!--            <artifactId>sentinel-annotation-aspectj</artifactId>-->
+<!--        </dependency>-->
+
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.csp</groupId>-->
+<!--            <artifactId>sentinel-core</artifactId>-->
+<!--        </dependency>-->
+
+<!--&lt;!&ndash;        sentinel控制台通讯的包&ndash;&gt;-->
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba.csp</groupId>-->
+<!--            <artifactId>sentinel-transport-simple-http</artifactId>-->
+<!--        </dependency>-->
+
+
+<!--        这个依赖是实现了从配置中心读规则的功能-->
         <dependency>
             <groupId>com.alibaba.csp</groupId>
             <artifactId>sentinel-datasource-nacos</artifactId>

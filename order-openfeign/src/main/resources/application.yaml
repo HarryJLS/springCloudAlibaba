@@ -1,35 +1,56 @@
-server:
-  port: 8010
-#应用名称
-spring:
-  application:
-    name: order-service
-  cloud:
-    nacos:
-      server-addr: localhost:8848
-      discovery:
-        username: nacos
-        password: nacos
-        namespace: public
-
-# springboot 默认的日志级别是info，feign的dubug日志级别是不会输入的
-logging:
-  level:
-    com:
-      example:
-        feign: debug
-
-#feign日志的局部配置
-feign:
-  client:
-    config:
-      stock-service:
-        loggerLevel: BASIC
-#        contract: feign.Contract.Default #设置为默认的契约，这样就可以使用feign自带的注解了
-#        请求处理时间
-        read-timeout: 3000
-#        服务连接超时时间
-        connect-timeout: 3000
-#        设置拦截器
-        request-interceptors:
-          - com.example.interceptor.CustomFeignInterceptor
+#server:
+#  port: 8010
+##应用名称
+#spring:
+#  application:
+#    name: order-service
+#  cloud:
+#    nacos:
+#      server-addr: localhost:8848
+#      discovery:
+#        username: nacos
+#        password: nacos
+#        namespace: public
+#
+#
+## springboot 默认的日志级别是info，feign的dubug日志级别是不会输入的
+#logging:
+#  level:
+#    com:
+#      example:
+#        feign: debug
+#
+##feign日志的局部配置
+#feign:
+#  client:
+#    config:
+#      stock-service:
+#        loggerLevel: BASIC
+##        contract: feign.Contract.Default #设置为默认的契约，这样就可以使用feign自带的注解了
+##        请求处理时间
+#        read-timeout: 3000
+##        服务连接超时时间
+#        connect-timeout: 3000
+##        设置拦截器
+#        request-interceptors:
+#          - com.example.interceptor.CustomFeignInterceptor
+#
+##配置编解码器
+#        encoder: feign.jackson.JacksonEncoder
+#        decoder: feign.jackson.JacksonDecoder
+#
+#  # 修改feign的的请求框架为apache httpclient5
+#  httpclient:
+#    hc5:
+#      enabled: true
+#
+##配置GZIP来压缩数据
+#  compression:
+#    request:
+#      enabled: true
+#      mime-types: text/xml,application/xml,application/json
+#      min-request-size: 2048
+#    response:
+#      enabled: true
+#
+#

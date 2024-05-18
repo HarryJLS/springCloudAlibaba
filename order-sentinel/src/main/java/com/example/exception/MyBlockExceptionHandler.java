@@ -16,21 +16,21 @@ import javax.servlet.http.HttpServletResponse;
  * @since 2023-06-17 17:57
  */
 
-//@Component
-//public class MyBlockExceptionHandler implements BlockExceptionHandler {
-//
-//    public static final Logger logger = LoggerFactory.getLogger(MyBlockExceptionHandler.class);
-//
-//    @Override
-//    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, BlockException e) throws Exception {
-//        logger.info("BlockExceptionHandler BlockException:{}", e);
-//
-//        if (e instanceof FlowException) {
-//            httpServletResponse.setStatus(429);
-//            httpServletResponse.getWriter().print("请求过于频繁");
-//        } else {
-//            httpServletResponse.setStatus(500);
-//            httpServletResponse.getWriter().print("系统异常");
-//        }
-//    }
-//}
+@Component
+public class MyBlockExceptionHandler implements BlockExceptionHandler {
+
+    public static final Logger logger = LoggerFactory.getLogger(MyBlockExceptionHandler.class);
+
+    @Override
+    public void handle(HttpServletRequest httpServletRequest, HttpServletResponse httpServletResponse, BlockException e) throws Exception {
+        logger.info("BlockExceptionHandler BlockException:{}", e);
+
+        if (e instanceof FlowException) {
+            httpServletResponse.setStatus(429);
+            httpServletResponse.getWriter().print("请求过于频繁");
+        } else {
+            httpServletResponse.setStatus(500);
+            httpServletResponse.getWriter().print("系统异常");
+        }
+    }
+}

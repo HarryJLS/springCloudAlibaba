@@ -31,7 +31,7 @@
 
         <dependency>
             <groupId>com.example</groupId>
-            <artifactId>jls-common</artifactId>
+            <artifactId>common-moudle</artifactId>
             <version>2023062901-SNAPSHOT</version>
         </dependency>
 
